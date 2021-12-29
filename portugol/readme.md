@@ -4,8 +4,8 @@
 Vamos lá, talvez você já tenha visto/estudado algoritmos utilizando o programa 
 <strong>VisuALG</strong>. Vamos utilizar aqui o <strong>Portugol Studio</strong>,
 por ser mais próximo do que veremos em JAVA, mas não se preocupe, apenas alguns 
-detalhes serão acrescentados, como por exemplo o uso de chaves ' { } ' e a 
-possibilidade de importação de bibliotecas.
+detalhes serão acrescentados, como por exemplo o uso das chaves '{ }' abrindo e 
+fechando os blocos e a possibilidade de importação de bibliotecas.
 </p>
 
 Vamos começar com a instalação do programa, clique de acordo com seu sistema operacional. <br> 

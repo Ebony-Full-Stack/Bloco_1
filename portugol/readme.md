@@ -1,3 +1,20 @@
+<h2 align="center">❌ Portugol | Algoritmo ❌</h2> 
+
+<p align="justify">
+Vamos lá, talvez você já tenha visto/estudado algoritmos utilizando o programa 
+<strong>VisuALG</strong>. Vamos utilizar aqui o <strong>Portugol Studio</strong>,
+por ser mais próximo do que veremos em JAVA, mas não se preocupe, apenas alguns 
+detalhes serão acrescentados, como por exemplo o uso de chaves ' { } ' e a 
+possibilidade de importação de bibliotecas.
+</p>
+
+Vamos começar com a instalação do programa, clique de acordo com seu sistema operacional. <br> 
+- Versão para Windows → [Portugol Studio](https://github.com/UNIVALI-LITE/Portugol-Studio/releases/download/v2.7.5/portugol-studio-2.7.5-windows.exe)
+- Versão para Linux → [Portugol Studio](https://github.com/UNIVALI-LITE/Portugol-Studio/releases/download/v2.7.5/portugol-studio-2.7.5-linux-x64.run.zip)
+- Instalação → [Passo-a-passo]()
+
+<hr>
+
 <h3>TIPOS DE DADOS</h3>
 
 <strong>programa</strong> { <br>
@@ -11,6 +28,7 @@
 }
 
 <hr>
+
 <h3>OPERADORES</h3>
 <h5>- ARITMÉTICOS</h5>
 
@@ -25,8 +43,8 @@
 ㅤㅤㅤㅤ<strong>escreval</strong> ( valor1 / valor2 )ㅤㅤ...dividindo<br>
 ㅤㅤㅤㅤ<strong>escreval</strong> ( valor1 % valor2 )ㅤㅤ...resto da divisão<br>
 ㅤㅤ} <br>
-}
-
+} 
+<br><br>
 <h5>- RELACIONAIS</h5>
 
 <strong>programa</strong> { <br>
@@ -45,3 +63,5 @@
 
 <hr>
 
+Veja mais no meu canal → [Códigos Simples](https://www.youtube.com/channel/UC8fRZfYGd21_D8DwuEcFuHw)
+</br>...mais informações → <a href="https://api.whatsapp.com/send?phone=5511979714423">WhatsApp</a>

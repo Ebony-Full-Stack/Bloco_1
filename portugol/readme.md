@@ -11,7 +11,7 @@ fechando os blocos e a possibilidade de importação de bibliotecas.
 Vamos começar com a instalação do programa, clique de acordo com seu sistema operacional. <br> 
 - Versão para Windows → [Portugol Studio](https://github.com/UNIVALI-LITE/Portugol-Studio/releases/download/v2.7.5/portugol-studio-2.7.5-windows.exe)
 - Versão para Linux → [Portugol Studio](https://github.com/UNIVALI-LITE/Portugol-Studio/releases/download/v2.7.5/portugol-studio-2.7.5-linux-x64.run.zip)
-- Instalação → [Passo-a-passo]()
+- Instalação → [Passo-a-passo](https://www.youtube.com/playlist?list=PL_Mb9ReKpfJWGDxrJxkvrMpk5OUyQNCza)
 
 <hr>
 
@@ -60,6 +60,58 @@ Vamos começar com a instalação do programa, clique de acordo com seu sistema 
 ㅤㅤㅤㅤ<strong>escreval</strong> ( valor1 < valor2 )ㅤㅤ...menor que<br>ㅤㅤ
 } <br>
 }
+
+<hr>
+
+<h3>LAÇOS DE REPETIÇÃO</h3>
+<strong> - PARA</strong> | O laço "para" é composto de quatro partes:
+
+<p>
+<strong>para</strong> ( <strong>início</strong> ; <strong>fim</strong> (condição) ; 
+<strong>passo</strong> ) {<br>
+ㅤㅤㅤ. <br>
+ㅤㅤㅤ. <br>
+ㅤㅤcorpo <br>
+ㅤㅤㅤ. <br>
+ㅤㅤㅤ. <br>
+}
+
+<strong>INÍCIO</strong> | Qualquer variável definida aqui, somente existirá dentro 
+do código desse laço, mas em outras linguagens ela continua existindo fora dele.
+Esta variável pode ser inicializada antes ou diretamente na criação do laço.
+
+
+<strong>FIM / Condição</strong> | é um teste para verificar se deve continuar dentro 
+do laço ou sair dele. O teste ocorre logo após o início, desta forma, se a resposta for
+'falsa' ele sai do laço imediatamente, sem executar o corpo e o passo nenhuma vez.
+
+
+Caso a resposta do teste seja verdadeira, o corpo será executado quantas vezes sejam
+necessárias, até que a resposta deixe de ser verdadeira, neste momento a repetição será
+interrompida. 
+
+<strong>CORPO</strong> | Trecho principal de código, que será repetido zero ou mais vezes.
+Ele tem acesso às variáveis da iniciação e condição, e pode manipulá-las ou não. Também 
+pode executar comandos que "forçam" a quebra do laço (break) ou que continuam a partir do 
+passo (continue) antes de chegar ao final do corpo. Se esses comandos não forem utilizados, 
+o corpo segue até o final, antes de passar pra próxima etapa.
+
+<strong>PASSO</strong> | Por padrão este será autoincrementado em +1, mas é possível utilizar
+o passo que sua aplicação necessitar. Podendo ser em ordem crescente... de 1 em 1, 2 em 2, 50 
+em 50 e etc. Também em ordem decrescente... -1 em -1, -2 em -2, -50 em -50.
+Bastando apenas informar o valor da incrementação, sendo o 1 representado por ++ como exemplo.
+
+
+para (int contador = 1 ;ㅤcontador <= 10;ㅤcontador++ ) {<br>
+
+ㅤㅤㅤescreval ( contador ); <br>
+
+}
+
+</p>
+
+
+
 
 <hr>
 

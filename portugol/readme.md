@@ -64,9 +64,9 @@ Vamos começar com a instalação do programa, clique de acordo com seu sistema 
 <hr>
 
 <h3>LAÇOS DE REPETIÇÃO</h3>
-<strong> - PARA</strong> | O laço "para" é composto de quatro partes:
+<strong> - PARA</strong> | O laço "para" é composto de quatro partes: <br>
 
-<p>
+
 <strong>para</strong> ( <strong>início</strong> ; <strong>fim</strong> (condição) ; 
 <strong>passo</strong> ) {<br>
 ㅤㅤㅤ. <br>
@@ -108,10 +108,22 @@ para (int contador = 1 ;ㅤcontador <= 10;ㅤcontador++ ) {<br>
 
 }
 
-</p>
+<hr>
 
+<strong> - FAÇA ENQUANTO</strong> | A repetição faça enquanto, como o próprio nome sugere,
+primeiro faz depois testa. Desta forma, no mínimo uma execução do corpo será feita. <br>
 
+Note no exemplo abaixo que, a condição lógica de teste é que a nota precisa estar no intervalo
+entre 0 e 10 pra ser aceita e o programa seguir seu curso... O que ocorre é que, independente
+de qual nota seja inserida pelo usuário, ela só será testada dentro do laço, desta forma, para
+que a repetição seja encerrada, a nota precisa estar entre 0 e 10, caso contrário, o input será
+feito novamente e quantas vezes for preciso até que a condição seja satisfeita.
 
+<strong>faca</strong> {<br><br>
+ㅤㅤㅤescreva("Digite uma nota: ") <br>
+ㅤㅤㅤleia(nota) <br><br>
+<strong>enquanto</strong> ( nota < 0 ou nota > 10 ) 
+<br>}
 
 <hr>
 

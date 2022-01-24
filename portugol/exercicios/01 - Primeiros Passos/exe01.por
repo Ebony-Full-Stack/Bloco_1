@@ -1,4 +1,4 @@
-programa {	
+programa {	
 	/*
 	Faça um sistema que leia a data de nascimento de uma pessoa expressa 
 	em anos, meses e dias e mostre-a expressa apenas em dias. 
@@ -110,6 +110,16 @@ programa {
 			escreva("\nOps, data inválida!\n")
 		}
 	}
+
+	/*
+	Validando código: 
+		acesse: https://www.contardias.com.br/contar-dias-de-vida
+		Exemplo de teste:
+			01/11/1985
+			10/02/2000
+			...
+	*/
+
 }
 
 
@@ -134,7 +144,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2469; 
+ * @POSICAO-CURSOR = 2610; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

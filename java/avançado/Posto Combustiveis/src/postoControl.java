@@ -1,6 +1,3 @@
-
-import javax.swing.*;
-
 public class postoControl {
     /**
      * @param args the command line arguments

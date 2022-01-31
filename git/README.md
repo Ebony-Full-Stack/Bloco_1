@@ -1,13 +1,10 @@
 <h2> GIT </h2>
-<p align="center" style="color:Green">
+<p align="center">
     Software sugerido: 
     <a href="https://git-scm.com/downloads" target="_blank">GitBash</a>
 </p>
 <h3>Configuração</h3>
-<p align="justify">As configurações do GIT são armazenadas no arquivo
-(.gitconfig) localizado no diretório do usuário e as configurações 
-realizadas 
-através dos comandos abaixo serão incluídas neste mesmo arquivo.
+<p align="justify">As configurações do GIT são armazenadas no arquivo (.gitconfig) localizado no diretório do usuário e as configurações realizadas através dos comandos abaixo serão incluídas neste mesmo arquivo.
 </p>
 
 ##### Setar usuário
@@ -24,11 +21,9 @@ através dos comandos abaixo serão incluídas neste mesmo arquivo.
 	git config --list
 
 <p align="justify">
-    Importante lembrar que você pode optar por configurar apenas
-    o <strong>nome de usuário</strong> e <strong>email</strong>, 
-    as demais configurações podem seguir como por padrão. 
+    Importante lembrar que você pode optar por configurar apenas o <strong>nome de usuário</strong> e <strong>email</strong>, as demais configurações podem seguir como por padrão. 
 </p>
-<hr><h3>Ajuda</h3>
+<h3>Ajuda</h3>
 
 	git help
 	git help add
@@ -36,12 +31,12 @@ através dos comandos abaixo serão incluídas neste mesmo arquivo.
     git help push	
     git help <qualquer_comando_git>
 
-<hr><h3>Estados</h3>
+<h3>Estados</h3>
 ♦ Modificado (modified) <br>
 ♦ Preparado (staged/index) <br>
 ♦ Consolidado (comitted)
 
-<hr><h3>Ignorar Arquivos</h3>
+<h3>Ignorar Arquivos</h3>
 <p align="justify">
 No arquivo (.gitignore) você pode listar arquivos, diretórios e/ou
 extensões que não devem ser enviados ao seu repositório no github.
@@ -57,7 +52,6 @@ e deve conter a lista dos arquivos/diretórios que devem ser ignorados
 apenas para o repositório específico.
 </p>
 <h3>Repositório Local</h3>
-
 <h4 align="center">Criando um repositório...</h4>
 
 	git init nome
@@ -65,52 +59,60 @@ apenas para o repositório específico.
 
 	git status
 <h4 align="center">Adidionando...</h4>
-###### Adicionar um arquivo em específico
+
+##### Adicionar um arquivo em específico
 	git add arquivo.extensão
-###### Adicionar um diretório em específico
+##### Adicionar um diretório em específico
 	git add diretorio
-###### Adicionar todos os arquivos/diretórios
+##### Adicionar todos os arquivos/diretórios
 	git add .
-###### Adicionar um arquivo que está listado no .gitignore
+##### Adicionar um arquivo que está listado no .gitignore
 	git add -f arquivo_no_gitignore.extensão
 
 <h4 align="center">Commitando arquivos...</h4>
-###### Comitar um arquivo	
+
+##### Comitar um arquivo	
 	git commit arquivo.extensão
-###### Comitar vários arquivos
+##### Comitar vários arquivos
 	git commit arquivo.extensão outro_arquivo.extensão
-###### Comitar informando mensagem (mais usual)
+##### Comitar informando mensagem (mais usual)
 	git commit arquivo.extensao -m "mensagem de commit"
 
 <h4 align="center">Removendo...</h4>
-###### Remover arquivo
+
+##### Remover arquivo
 	git rm arquivo.extensão
-###### Remover diretório
+##### Remover diretório
 	git rm -r diretorio
 
 <h4 align="center">Visualizando histórico...</h4>
-###### Exibir histórico	
+
+##### Exibir histórico	
 	git log	
-###### Exibir histórico com diff das duas últimas alterações
+##### Exibir histórico com diff das duas últimas alterações
 	git log -p -2	
-###### Exibir resumo do histórico 
+##### Exibir resumo do histórico 
 	git log --stat
-###### Exibir informações resumidas em uma linha
+##### Exibir informações resumidas em uma linha
 	git log --pretty=oneline	
-###### Exibir histórico com formatação específica
+##### Exibir histórico com formatação específica
 	git log --pretty=format:"%h - %an, %ar : %s"
 	
 ♦ %h: Abreviação do hash;<br>
 ♦ %an: Nome do autor;<br>
 ♦ %ar: Data;<br>
 ♦ %s: Comentário.<br>
-...mais opções de formatação → [Git Book](http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History)
 
-###### Exibir histório de um arquivo específico
+<p align="center">
+    ...mais opções de formatação:  
+    <a href="http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History" target="_blank">Git Book</a>
+</p>
+
+##### Exibir histório de um arquivo específico
 	git log -- <caminho_do_arquivo>
-###### Exibir histórico de um arquivo específico que contêm uma determinada palavra
+##### Exibir histórico de um arquivo específico que contêm uma determinada palavra
 	git log --summary -S<palavra> [<caminho_do_arquivo>]
-###### Exibir histórico modificação de um arquivo
+##### Exibir histórico modificação de um arquivo
 	git log --diff-filter=M -- <caminho_do_arquivo>
 
 ♦ O **M** pode ser substituido por: 
@@ -121,15 +123,16 @@ apenas para o repositório específico.
 + **R** Renomeado<br> 
 ...entre outros.
 
-###### Exibir histório de um determinado autor
+##### Exibir histório de um determinado autor
 	git log --author=usuario
-###### Exibir revisão e autor da última modificação de uma bloco de linhas
+##### Exibir revisão e autor da última modificação de uma bloco de linhas
 	git blame -L 12,22 arquivo.extensão 
 
 <h4 align="center">Desfazendo alterações...</h4>
-###### Desfazendo alteração local (working directory) → *antes da Staged Area*  
+
+##### Desfazendo alteração local (working directory) → *antes da Staged Area*  
 	git checkout -- arquivo.extensão
-###### Desfazendo alteração local (staging area) → *depois de adc na Staged Area*
+##### Desfazendo alteração local (staging area) → *depois de adc na Staged Area*
 	git reset HEAD arquivo.extensão
 
 Pós utilizar este comando... caso seja exibida esta saída:
@@ -144,16 +147,18 @@ O que pode ser feito através do comando:
 
 <h3>Repositório Remoto</h3>
 <h4 align="center">Vinculando...</h4>
-###### Vincular repositório local com um repositório remoto
+
+##### Vincular repositório local com um repositório remoto
 	git remote add origin git@github.com:nomedeusuario/nomedorepositório.git
-###### Desvincular um repositório remoto
+##### Desvincular um repositório remoto
 	git remote rm curso-git
 
 <h4 align="center">Visualizando...</h4>
-###### Repositórios
+
+##### Repositórios
 	git remote
 	git remote -v
-###### Exibir informações dos repositórios remotos
+##### Exibir informações dos repositórios remotos
 	git remote show origin
 
 <h4 align="center">Renomeando um repositório...</h4>
@@ -161,11 +166,13 @@ O que pode ser feito através do comando:
 	git remote rename origin curso-git
 
 <h4 align="center">Clonando...</h4>
-###### Clonar um repositório remoto já existente no seu PC
+
+##### Clonar um repositório remoto já existente no seu PC
 	git clone git@github.com:nomedeusuario/nomedorepositorio.git
 
 <h4 align="center">Atualizando...</h4>
-###### Enviar arquivos/diretórios para o repositório remoto
+
+##### Enviar arquivos/diretórios para o repositório remoto
 
 O primeiro **push** de um repositório deve conter o nome do 
 repositório remoto e o branch.
@@ -176,27 +183,31 @@ Ainda que uma boa pratica manter, os demais **pushes** não
 precisam dessa informação.
 
 	git push
+	
 ##### Buscar as alterações, mas não aplica-las no branch atual
 	git fetch
 ##### Atualizar os arquivos no branch atual
 	git pull
 
 <h4 align="center">TAGs...</h4>
-###### Criando uma tag leve
+
+##### Criando uma tag leve
 	git tag vs-1.1
-###### Criando uma tag anotada
+##### Criando uma tag anotada
 	git tag -a vs-1.1 -m "Minha versão 1.1"
-###### Criando uma tag assinada
+##### Criando uma tag assinada
 Para criar uma tag assinada é necessário uma chave privada 
 (GNU Privacy Guard - GPG).
     
     git tag -s vs-1.1 -m "Minha tag assinada 1.1"
-###### Criando tag a partir de um commit (hash)
+    
+##### Criando tag a partir de um commit (hash)
 	git tag -a vs-1.2 9fceb02
-###### Criando tags no repositório remoto
+##### Criando tags no repositório remoto
 	git push origin vs-1.2
-###### Criando todas as tags locais no repositório remoto
+##### Criando todas as tags locais no repositório remoto
 	git push origin --tags
+	
 <h4 align="center">Branch...</h4>
 A **main** é a branch principal do GIT. Você pode encontrar também pelo
 nome de **master**, porém, este termo de cunho racista foi eliminado,
@@ -205,17 +216,17 @@ mas ainda é econtrado em softwares desatualizados.
 O **HEAD** é um ponteiro *especial* que indica qual é a branch atual. 
 Por padrão, o **HEAD** aponta para a branch principal, **main**.
 
-###### Criando uma nova branch
+##### Criando uma nova branch
 	git branch nomeNovaBranch
-###### Trocando para um branch (existente)
+##### Trocando para um branch (existente)
 	git checkout nomeBranchExistente
 	
 ...deste momento pra frente, o ponteiro principal **HEAD** estará 
 apontando para o branch nomeBranchExistente.
 
-###### Criar uma nova branch e trocar automaticamente
+##### Criar uma nova branch e trocar automaticamente
 	git checkout -b novaBranch
-###### Voltar para o branch principal (main)
+##### Voltar para o branch principal (main)
 	git checkout main
 
 <h4 align="center">Merging...</h4>
@@ -230,8 +241,7 @@ textos que não sofreram alterações nas mesmas linhas, já o merge
 manual será feito em arquivos textos que sofreram alterações nas 
 mesmas linhas.
 
-
-###### Merge entre os branches → estando na branch main
+##### Merge entre os branches → estando na branch main
 	git merge upstream
 
 A mensagem indicando um *merge* manual será:
@@ -240,22 +250,22 @@ A mensagem indicando um *merge* manual será:
 	CONFLICT (content): Merge conflict in arquivo.extensão
 	Automatic merge failed; fix conflicts and then commit the result.
 
-###### Apagando uma branch
+##### Apagando uma branch
 	git branch -d nomeDaBranch
-###### Listar branches 
+##### Listar branches 
 	git branch
-###### Listar branches com informações dos últimos commits
+##### Listar branches com informações dos últimos commits
 	git branch -v
-###### Listar branches que já foram fundidas (merged) com o **main**
+##### Listar branches que já foram fundidas (merged) com o **main**
 	git branch --merged
-###### Listar branches que não foram fundidas (merged) com o **main**
+##### Listar branches que não foram fundidas (merged) com o **main**
 	git branch --no-merged
 
 <h4 align="center">Branch repositório remoto...</h4>
 
-###### Criando com o mesmo nome
+##### Criando com o mesmo nome
 	git push origin nomeDaBranch
-###### Criando com nome diferente
+##### Criando com nome diferente
 	git push origin nomeDaBranch:novaBranch
 ##### Baixar uma branch remoto para edição
 	git checkout -b nomeDaBranch origin/nomeDaBranch
@@ -263,10 +273,16 @@ A mensagem indicando um *merge* manual será:
 	git push origin:nomeDaBranch
 
 <h4 align="center">Rebasing...</h4>
-###### Fazendo o **rebase** entre uma branch upstream e a main.
+
+##### Fazendo o **rebase** entre uma branch upstream e a main.
 
 	git checkout experiment
 	git rebase main
+
+<p align="center">
+    ...mais informações sobre Rebase:  
+    <a href="http://git-scm.com/book/en/Git-Branching-Rebasing" target="_blank">Git Rebasing</a>
+</p>
 
 Mais informações e explicações sobre o [Rebasing](http://git-scm.com/book/en/Git-Branching-Rebasing)
 
@@ -279,22 +295,23 @@ um **stash**.
 O Stash é como se fosse uma branch temporária que contem apenas as 
 alterações ainda não commitadas.
 
-###### Criar um stash
+##### Criar um stash
 	git stash
-###### Listar stashes
+##### Listar stashes
 	git stash list
-###### Voltar para o último stash
+##### Voltar para o último stash
 	git stash apply
-###### Voltar para um stash específico
+##### Voltar para um stash específico
 	git stash apply stash@{2}
 Onde **2** é o indíce do stash desejado.
-###### Criar um branch a partir de um stash
+##### Criar uma branch a partir de um stash
 	git stash branch nomeBranch
 
 <h4 align="center">Reescrevendo histórico...</h4>
-###### Alterando mensagens de commit
+
+##### Alterando mensagens de commit
 	git commit --amend -m "nova mensagem"
-###### Alterar 3 últimos commits
+##### Alterar 3 últimos commits
 	git rebase -i HEAD~3
 
 O editor de texto será aberto com as linhas representando os 3 últimos commits.
@@ -324,38 +341,42 @@ Aplique a alteração
 um commit apenas mudando as linhas ou removendo.
 
 <h4 align="center">Squashing...</h4>
-###### Juntando vários commits
+
+##### Juntando vários commits
 Seguir os mesmos passos acima, porém marcar os commtis que devem 
 ser juntados com **squash**
 
 <h4 align="center">Removendo histórico...</h4>	
-###### Remover todo histórico de um arquivo
+
+##### Remover todo histórico de um arquivo
 	git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
 
 <h4 align="center">Bisect...</h4>
 O bisect (pesquisa binária) é útil para encontrar um commit que 
 está gerando um bug ou uma inconsistência entre uma sequência 
 de commits.
-###### Iniciar pesquisa binária
+
+##### Iniciar pesquisa binária
 	git bisect start
-###### Marcar o commit atual como ruim
+##### Marcar o commit atual como ruim
 	git bisect bad
-###### Marcar o commit de uma tag que esta sem o bug/inconsistência
+##### Marcar o commit de uma tag que esta sem o bug/inconsistência
 	git bisect good vs-1.1
-###### Marcar o commit como GOOD (bom)
+##### Marcar o commit como GOOD (bom)
+
 O GIT irá navegar entre os commits para ajudar a indentificar o 
 commit que está com o problema. Se o commit atual não estiver 
 quebrado, então é necessário marca-lo como **bom**.
 
 	git bisect good
 
-###### Marcar o commit como BAD (ruim)
+##### Marcar o commit como BAD (ruim)
 Se o commit estiver com o problema, então ele deverá ser marcado 
 como **ruim**.
 
  	git bisect bad
  
-###### Finalizar a pesquisa binária
+##### Finalizar a pesquisa binária
 Depois de encontrar o commit com problema, para retornar para o 
 *HEAD* utilize:
 	

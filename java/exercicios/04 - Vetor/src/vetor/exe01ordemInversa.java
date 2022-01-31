@@ -2,7 +2,7 @@ package vetor;
 import java.util.Scanner;
 
 /*
-Faça um Programa com um vetor de 5 números reais 
+FaÃ§a um Programa com um vetor de 5 nÃºmeros reais 
 e mostre-os na ordem inversa.
 
 Autor Leonardo Alves
@@ -20,7 +20,7 @@ public class exe01ordemInversa {
 				vetor[cont] = ler.nextDouble();
 			}
 			
-			// Mostrando em ordem de inserção
+			// Mostrando na ordem que foi inserido
 			System.out.printf("\nValores em ordem normal.: ");
 			for (cont=0; cont < vetor.length; cont++) {
 				

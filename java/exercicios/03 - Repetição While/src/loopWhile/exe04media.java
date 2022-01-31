@@ -16,7 +16,7 @@ public class exe04media {
 		int[] idades = new int[10];
 		int cont, soma=0;
 		double media=0.0;
-		String status="Ops, algo errado não está certo.";
+		String status="Ops, algo errado não está  .";
 		
 		for (cont=0; cont<10;cont++) {
 			idades[cont] = Integer.parseInt(JOptionPane.showInputDialog((cont+1) + "ª Aluno.\nSua idade: "));

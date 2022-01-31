@@ -284,8 +284,6 @@ A mensagem indicando um *merge* manual será:
     <a href="http://git-scm.com/book/en/Git-Branching-Rebasing" target="_blank">Git Rebasing</a>
 </p>
 
-Mais informações e explicações sobre o [Rebasing](http://git-scm.com/book/en/Git-Branching-Rebasing)
-
 <h4 align="center">Stashing...</h4>
 Para alternar entre uma branch e outra é necessário fazer o commit 
 das alterações atuais para depois trocar de branch. Se existir a 

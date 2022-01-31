@@ -2,7 +2,7 @@ package loopWhile;
 import javax.swing.JOptionPane;
 
 /*
-Solicitar a idade de várias pessoas e imprimir: 
+Solicitar a idade de vÃ¡rias pessoas e imprimir: 
 Total de pessoas com menos de 21 anos. Total de 
 pessoas com mais de 50 anos. O programa termina 
 quando idade for =-99. (WHILE)
@@ -17,7 +17,7 @@ public class exe01 {
 		while (idade != -99) {
 			qtd++;
 			idade = Integer.parseInt(JOptionPane.showInputDialog(
-					qtd + "ª Pessoa | Digite sua idade ou [-99] para encerrar: "));
+					qtd + "Âª Pessoa | Digite sua idade ou [-99] para encerrar: "));
 					
 			if (idade < 21 && idade != -99) {
 				soma21++;

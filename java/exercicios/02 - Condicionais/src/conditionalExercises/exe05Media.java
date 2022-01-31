@@ -48,6 +48,7 @@ public class exe05Media {
 		
 		System.out.printf("\nCom média: %.1f", media); 
 		System.out.println("\nSituação: " + status);
+		ler.close();
 		
 	}
 }

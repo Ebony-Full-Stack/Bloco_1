@@ -3,10 +3,10 @@ package loopFor;
 import java.util.*;
 
 /*
-Faça um programa que leia ano de nascimento 
+FaÃ§a um programa que leia ano de nascimento 
 de 5 pessoas e no final mostra quantas pessoas 
-já atingiram a maioridade e para aquelas que 
-ainda não atingiram, mostre a média em anos que 
+jï¿½ atingiram a maioridade e para aquelas que 
+ainda nï¿½o atingiram, mostre a mÃ©dia em anos que 
 faltam para chegarem a maioridade.
 
 Auto => Leonardo Alves

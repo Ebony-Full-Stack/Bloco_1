@@ -13,30 +13,55 @@ Autor Leonardo Alves
 public class exe06variosNumeros {
 
 	public static void main(String[] args) {
-		int num;
-		String sair;
-		Scanner leia = new Scanner (System.in);
-		
+		int num, cont = 0, soma = 0, maior = 0, menor = 0;
+		char sair, s;
+		Scanner leia = new Scanner(System.in);
+
 		while (true) {
-			
-			System.out.println("Digite um número: ");
+
+			System.out.print("Digite um número: ");
 			num = leia.nextInt();
-			
+
+			if (cont == 0) {
+				maior = num;
+				menor = num;
+			} else {
+				if (num > maior) {
+					maior = num;
+				}
+				if (num < menor) {
+					menor = num;
+				}
+			}
+
+			cont++;
+			soma += num;
+
 			leia.nextLine();
-			System.out.println("Digitar mais um? [S | N]: ");
-			sair = leia.nextLine();
-			
-			if (sair == "S") {
-				
-				break;
-				
+
+			while (true) {
+				System.out.print("Digitar mais um? [S | N]: ");
+				sair = leia.next().charAt(0);
+
+				s = Character.toUpperCase(sair);
+
+				if (s != 'N' && s != 'S') {
+					System.out.println("\nOps, dado inválido!\n");
+
+				} else {
+					break;
+				}
 			}
 			
-			
+			if (s == 'N') {			
+				System.out.println("\nTotal de números inseridos..: " + cont);
+				System.out.println("Maior número inserido.......: " + maior);
+				System.out.println("Menor número inserido.......: " + menor);
+				System.out.println("Soma dos números inseridos..: " + soma);
+				System.out.println("Média dos números inseridos.: " + soma/cont);
+				break;
+			}
 		}
-		
-		leia.close();
+
 	}
-	
 }
-  

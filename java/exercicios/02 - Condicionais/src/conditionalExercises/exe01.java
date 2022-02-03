@@ -1,7 +1,11 @@
 package conditionalExercises;
 
-// Faça um programa que receba três inteiros e diga qual deles é o maior
-// por -> Leonardo Alves
+/*	
+Faça um programa que receba três números inteiros 
+e ao final, diga qual  deles é o maior...
+por -> Leonardo Alves
+*/
+
 
 import java.util.Scanner;
 

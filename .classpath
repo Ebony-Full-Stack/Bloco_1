@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="java/avançado/MoedaFormat/src"/>
+	<classpathentry kind="src" path="java/avançado/Posto Combustiveis/src"/>
+	<classpathentry kind="src" path="java/exercicios/02 - Condicionais/src"/>
+	<classpathentry kind="src" path="java/exercicios/03 - Repetição For/src"/>
+	<classpathentry kind="src" path="java/exercicios/03 - Repetição While/src"/>
+	<classpathentry kind="src" path="java/exercicios/04 - Vetor/src"/>
+	<classpathentry kind="output" path="java/avançado/MoedaFormat/bin"/>
+</classpath>

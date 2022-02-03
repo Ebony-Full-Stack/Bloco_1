@@ -1,7 +1,10 @@
 package conditionalExercises;
 
-// Faça um programa que entre com três números e coloque em ordem crescente.
-// por -> Leonardo Alves
+/* 
+Faça um programa que entre com três números 
+e coloque em ordem crescente.
+por -> Leonardo Alves
+*/
 
 import java.util.Scanner;
 

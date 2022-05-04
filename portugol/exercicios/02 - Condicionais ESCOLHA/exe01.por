@@ -1,14 +1,12 @@
-programa
-{
-	/*
-	Crie um sistema que permita ao usuário escolher 2 números e apresente um menu
-	com as opções: Somar, Subtrair, Multiplicar e Dividir
+programa {
+/*
+Crie um sistema que permita ao usuário escolher 2 números e apresente um menu
+com as opções: Somar, Subtrair, Multiplicar e Dividir
 
-	Autor: Leonardo Alves
-	*/
+Autor: Leonardo Alves
+*/
 	
-	funcao inicio()
-	{
+	funcao inicio() {
 		inteiro opc, n1, n2, resultado = 0
 	
 		escreva("|=== MENU PRINCIPAL ===|")
@@ -40,7 +38,9 @@ programa
 			}
 			
 			escreva("\nResultado: ", resultado, "\n\n")	
-		} senao {
+			
+		} 
+		senao {
 			escreva("\nOps, parece que você escolheu uma opção inválida...\n\n")
 		}
 	}
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 536; 
+ * @POSICAO-CURSOR = 393; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

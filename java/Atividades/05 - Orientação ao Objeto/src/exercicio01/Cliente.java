@@ -1,4 +1,4 @@
-package exercício01;
+package exercicio01;
 
 import java.util.Date;
 
@@ -38,6 +38,10 @@ public class Cliente {
 
 	public void setCpf(Integer cpf) {
 		this.cpf = cpf;
+	}
+	
+	void comprar() {
+		System.out.println("\n\nOk, relaxe aí... O cliente em questão, está escolhendo produtos...");
 	}
 	
 }

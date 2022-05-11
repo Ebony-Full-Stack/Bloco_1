@@ -40,4 +40,8 @@ public class Cliente {
 		this.cpf = cpf;
 	}
 	
+	void comprar() {
+		System.out.println("\n\nOk, relaxe aí... O cliente em questão, está escolhendo produtos...");
+	}
+	
 }

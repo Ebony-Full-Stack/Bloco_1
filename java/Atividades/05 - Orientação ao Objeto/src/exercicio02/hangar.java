@@ -1,4 +1,4 @@
-package exercício02;
+package exercicio02;
 // Leonardo Alves
 
 import java.util.Scanner;
@@ -12,6 +12,8 @@ public class hangar {
 		cabecalho("Hangar EBONY Aviações", "Voe sempre com segurança!!!");
 		dadosEntrada(aviao, ler);
 		dadosImprimir(aviao);
+		
+		aviao.vooAtual();
 	
 		ler.close();
 	}

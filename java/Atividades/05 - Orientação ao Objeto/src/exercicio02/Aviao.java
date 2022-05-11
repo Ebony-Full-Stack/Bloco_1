@@ -1,4 +1,4 @@
-package exercício02;
+package exercicio02;
 // Leonardo Alves
 
 public class Aviao {
@@ -30,4 +30,10 @@ public class Aviao {
 	public void setStatus(String status) {
 		this.status = status;
 	}	
+	
+	void vooAtual() {
+		System.out.println("\n\nAeronave me voo. \nPartida: SBRJ\nDestino: SBSP");
+	}
+	
+	
 }

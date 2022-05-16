@@ -77,7 +77,7 @@ public class Estoque {
 	
 	static void delProduto(ArrayList<Produto> produto) {
 		
-		int pd = Integer.parseInt(JOptionPane.showInputDialog("Digite o número da posi��o que deseja deletar: "));
+		int pd = Integer.parseInt(JOptionPane.showInputDialog("Digite o número da posição que deseja deletar: "));
 		while(pd < 0 || pd >= produto.size()) {
 			JOptionPane.showMessageDialog(null, "Valor inválido!!!", "Aviso", JOptionPane.INFORMATION_MESSAGE);
 			pd = Integer.parseInt(JOptionPane.showInputDialog("Digite o námero da posição que deseja deletar: "));

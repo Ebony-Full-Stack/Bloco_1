@@ -85,9 +85,10 @@ programa {
 			qtdDia = diasMes(mesAtual -1, anoAtual) + diaAtual - diaNasc 
 		}
 
+		limpa()
 		escreva("\nAnalisando, por favor aguarde...")
 		Util.aguarde(3000)
-		escreva("\nVocê tem: ", qtdAno, " anos, " + qtdMes + " meses e " + qtdDia + " dias.")
+		escreva("\n\nVocê tem: ", qtdAno, " anos, " + qtdMes + " meses e " + qtdDia + " dias.")
 		Util.aguarde(1000)
 		escreva("\nTotal de dias vividos: ", (qtdAno * 365) + (qtdMes * 30) + qtdDia + 10, "\n\n")
 	}
@@ -144,7 +145,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2610; 
+ * @POSICAO-CURSOR = 1909; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -12,8 +12,9 @@ Autor: Leonardo Alves
 	
 	funcao inicio() {
 		
-		inteiro cont, dado[10], soma = 0, maior = 0
+		inteiro cont, contm = 0, dado[10], soma = 0, maior = 0, tmaior = 0
 		real media
+		logico status=falso
 
 		escreva("Sortendo: ")
 		
@@ -24,15 +25,32 @@ Autor: Leonardo Alves
 
 			se(dado[cont] == 6) {
 				maior++
+				tmaior++
+				status = verdadeiro
 			}
+			se(maior <= dado[cont]) {
+				maior = dado[cont]
+			}
+			
 			escreva(dado[cont] + " | ")
 			u.aguarde(500)
+		}
+		para(cont = 0; cont < 10; cont++) {
+			se(maior == dado[cont]) {
+				contm++
+			}
 		}
 		
 		media = soma/cont
 		
-		escreva("\n\nMédia aritmética dos lançamentos: ", media, 
-		"\nOcorrências da maior pontuação: ", maior, "\n\n") 
+		escreva("\n\nMédia aritmética dos lançamentos: ", media) 
+		se(status == verdadeiro) {
+			escreva("\nOcorrências da maior pontuação [6]: ", tmaior, "\n\n")
+		}
+		senao {
+			escreva("\nOcorrências da maior pontuação [6]: ", contm, "\n\n")
+		}
+		 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -40,7 +58,7 @@ Autor: Leonardo Alves
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 557; 
+ * @POSICAO-CURSOR = 909; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

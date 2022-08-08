@@ -16,8 +16,8 @@ public class exe01_versão1 {
 	
 	public static void main(String[] args) {
 		
-		final short diaAtual = 06;
-		final short mesAtual = 05;
+		final short diaAtual = 8;
+		final short mesAtual = 8;
 		final short anoAtual = 2022;
 		int dia, mes, ano, total;
 		

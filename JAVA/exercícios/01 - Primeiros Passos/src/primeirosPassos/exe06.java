@@ -30,7 +30,7 @@ public class exe06 {
 		
 		d = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 		
-		System.out.println("\nDistância calculado foi de: " + formatar.format(d));
+		System.out.println("\nDistância calculada foi de: " + formatar.format(d));
 		
 		ler.close();
 	}

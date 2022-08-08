@@ -18,7 +18,7 @@ public class exe07IMC {
 	public static void main(String[] args) {
 		
 		double altura, peso, imc;
-		String resultado;
+		String resultado = "";
 		Scanner ler = new Scanner (System.in);
 		
 		System.out.printf("\nDigite sua altura: ");
@@ -50,10 +50,10 @@ public class exe07IMC {
 			
 			} else if (imc >= 16 && imc < 17) {
 				resultado = "MUITO ABAIXO DO PESO";
+			} 
 			
 			System.out.printf("\nCom IMC: %.1f", imc);
 			System.out.println("\nSituação: " + resultado);	
-			} 
 		
 		}else {
 			System.out.println("\nOps, algo errado não está certo!");

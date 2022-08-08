@@ -9,15 +9,15 @@ import java.util.Scanner;
 
 /*
 Implemente um programa em Java que leia as coordenadas de dois
-pontos e calcule a distância entre eles. Lembre-se que a distância 
-entre dois pontos é dada pela seguinte equação: Utilize as funções 
+pontos e calcule a distÃ¢ncia entre eles. Lembre-se que a distÃ¢ncia 
+entre dois pontos Ã© dada pela seguinte equaï¿½ï¿½o: Utilize as funÃ§Ãµes 
 sqrt e pow da classe Math para calcular a raiz quadrada e elevar os 
-números as suas devidas potencias.  
+nï¿½meros as suas devidas potencias.  
 
 Autor: Leonardo Alves
 */
 
-public class exe01_versão2 {
+public class exe01_versÃ£o2 {
 	public static void main(String[] args) {
 	
 		Scanner ler = new Scanner(System.in);

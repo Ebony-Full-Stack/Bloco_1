@@ -9,7 +9,7 @@ Autor Leonardo Alves
 */
 
 public class exe01ordemInversa {
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		try (Scanner ler = new Scanner (System.in)) {
 			double[] vetor = new double[5];
 			int cont;

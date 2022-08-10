@@ -51,7 +51,7 @@ public class exe07detetive {
 			}
 		}
 		
-		if (soma ==1 || soma == 2) {
+		if (soma == 1 || soma == 2) {
 			status = "Suspeito(a)!";
 		}
 		else if (soma == 3 || soma == 4) {
@@ -69,7 +69,10 @@ public class exe07detetive {
 		for (int cont=0; cont<46; cont++) {
 			
 			System.out.print(".");
-			try { Thread.sleep (100); } catch (InterruptedException ex) {}
+			try { 
+				Thread.sleep (100); 
+			} 
+			catch (InterruptedException ex) {}
 		}
 		
 		System.out.println("\n\nPós minunciosa análise de suas respostas,\nconcluímos que o Srº(ª) é: " + status);
